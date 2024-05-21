@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" pattern="[a-zA-Z]*" minlength="2" required><br><br>
+
+        
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" pattern="[a-zA-Z]*" minlength="2" required><br><br>
+        
+        
+        <label for="other_names">Other Names:</label><br>
+        <input type="text" id="other_names" name="other_names" minlength="2" pattern="[a-zA-Z]*"><br><br>
+        
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" minlength="11" maxlength="11"><br><br>
+        
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option> 
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <script src="/form.js"></script>
+</body>
+</html>
